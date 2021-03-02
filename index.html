@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600,700,900&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="new-portfolio-stylesheet.css">
+	
+
+	<title>clinton-reilly-web-developer</title>
+
+	<script src="https://kit.fontawesome.com/68efcaa5e5.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	<div id="top-container">
+		<div id="logo">
+			<h1 style="color: #FFA500;">CTechWeb</h1>
+		</div>
+		<div id="navigation">
+			<ul>
+				<li><a id="about" href="#">About</a></li>
+				<li><a id="contact" href="#">Contact</a></li>
+			</ul>
+		</div>
+		
+	</div>
+	<div id="textdiv">
+		<h1 id="centerHeading">Clinton Reilly <span style="color: #FFA500;">Developer</span> </h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam.</p>
+	</div>
+	<video id="videoBG" autoplay muted loop>
+		<source src="assets/man-in-front-of-computer.mp4" type="video/mp4">
+	</video>
+	<div id="footer">
+		<p>Copyright <span>&copy</span> 2020 <span style="color: #FFA500;">CTechWeb</span>. All rights reserved.</p>
+
+	</div>
+
+	<div id="aboutToggle">
+		<h2 style="color: #FFA500;text-decoration: underline;">About</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam.</p>
+	</div>
+
+	<div id="contactToggle">
+		<h2 style="color: #FFA500;text-decoration: underline;">Contact</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur porta dictum turpis, eu mollis justo gravida ac. Proin non eros blandit, rutrum est a, cursus quam.</p>
+		
+	</div>
+
+	<script type="text/javascript">
+
+    function toggle_visibility(elementId) {
+
+       var e = document.getElementById(elementId);
+
+       if(e.style.display !== "block")
+
+          e.style.display = "block";
+
+       else
+          e.style.display = "none";
+    }
+    
+
+    document.getElementById("about").onclick = function() {
+    	var c = document.getElementById("contactToggle");
+    	c.style.display = "none";
+    	var t = document.getElementById("textdiv");
+    	t.style.display = "none";
+    	toggle_visibility("aboutToggle");
+
+    }
+
+    document.getElementById("contact").onclick = function() {
+    	var a = document.getElementById("aboutToggle");
+    	a.style.display = "none";
+    	var t = document.getElementById("textdiv");
+    	t.style.display = "none";
+    	toggle_visibility("contactToggle");
+
+    }
+
+
+	</script>
+
+</body>
+
+	
+
+	
+</html>
